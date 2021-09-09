@@ -3,6 +3,16 @@
 
 namespace zlimbo {
 
+enum MetaCommandResult {
+    META_COMMAND_SUCCESS,
+    META_COMMAND_UNRECOGNIZED_COMMAND,
+};
+
+enum PrepareResult {
+    PREPARE_SUCCESS,
+    PREPARE_UNRECOGNIZED_STATEMENT,
+};
+
 class SimpleDatabase {
 
 public:

@@ -17,12 +17,16 @@ int SimpleDatabase::loop() {
 }
 
 void SimpleDatabase::printPrompt() {
-    std::cout << "sdb > " << std::endl;
+    std::cout << "sdb > ";
 }
 
 
 void InputBuffer::readInput() {
     std::getline(std::cin, cmd);
+}
+
+std::string InputBuffer::getCmd() {
+    return cmd;
 }
 
 };  // namespace zlimbo
