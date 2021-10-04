@@ -4,7 +4,10 @@
 
 
 int main(int argc, char* argv[]) {
+    
     zlimbo::SimpleDatabase sdb;
+
+    // block
     int res = sdb.loop();
 
     return res;
