@@ -1,3 +1,0 @@
-/home/z/z/cpp/simple_database/build/CMakeFiles/rebuild_cache.dir
-/home/z/z/cpp/simple_database/build/CMakeFiles/edit_cache.dir
-/home/z/z/cpp/simple_database/build/CMakeFiles/sdb.dir

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g -Wall   CMakeFiles/sdb.dir/SimpleDatabase.cpp.o CMakeFiles/sdb.dir/main.cpp.o  -o sdb 
