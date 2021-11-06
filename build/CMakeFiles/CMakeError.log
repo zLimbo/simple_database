@@ -1,0 +1,16 @@
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /home/z/z/cpp/simple_database/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_85ff6/fast && /usr/bin/make -f CMakeFiles/cmTC_85ff6.dir/build.make CMakeFiles/cmTC_85ff6.dir/build
+make[1]: Entering directory '/home/z/z/cpp/simple_database/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_85ff6.dir/testCXXCompiler.cxx.o
+/usr/bin/c++    -g;-Wall    -o CMakeFiles/cmTC_85ff6.dir/testCXXCompiler.cxx.o -c /home/z/z/cpp/simple_database/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+c++: fatal error: no input files
+compilation terminated.
+/bin/sh: 1: -Wall: not found
+make[1]: *** [CMakeFiles/cmTC_85ff6.dir/build.make:66: CMakeFiles/cmTC_85ff6.dir/testCXXCompiler.cxx.o] Error 127
+make[1]: Leaving directory '/home/z/z/cpp/simple_database/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_85ff6/fast] Error 2
+
+
+
