@@ -4,8 +4,7 @@
 
 namespace zlimbo {
 
-int SimpleDatabase::loop()
-{
+int SimpleDatabase::loop() {
     while (true) {
         print_prompt();
         CommandBuffer cmdBuf;
@@ -16,7 +15,8 @@ int SimpleDatabase::loop()
                 case META_COMMAND_SUCCESS:
                     continue;
                 case META_COMMAND_UNRECOGNIZED_COMMAND:
-                    std::cout << "Unrecognized command '" << cmd << "'" << std::endl;
+                    std::cout << "Unrecognized command '" << cmd << "'"
+                              << std::endl;
                     continue;
             }
         }
@@ -26,17 +26,19 @@ int SimpleDatabase::loop()
             case PREPARE_SUCCESS:
                 break;
             case PREPARE_UNRECOGNIZED_STATEMENT:
-                std::cout << "Unrecognized keyword at start of '" << cmd << "'" << std::endl;
+                std::cout << "Unrecognized keyword at start of '" << cmd << "'"
+                          << std::endl;
                 continue;
         }
-        statement.execute(); 
+        statement.execute();
         std::cout << "Executed." << std::endl;
     }
 }
 
 void SimpleDatabase::print_prompt() const { std::cout << "sdb > "; }
 
-MetaCommandResult SimpleDatabase::do_meta_command(const std::string& cmd) const {
+MetaCommandResult SimpleDatabase::do_meta_command(
+    const std::string& cmd) const {
     if (cmd == ".exit") {
         exit(EXIT_SUCCESS);
     } else {
@@ -72,4 +74,4 @@ void Statement::execute() {
     }
 }
 
-}; // namespace zlimbo
+};  // namespace zlimbo
